@@ -60,6 +60,7 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 50px 0px 50px 0px;
 }
 
@@ -259,6 +260,7 @@ img:hover {
     width: 90%;
 }
 
+
 /* Formatação do conteudo imacto real */
 .conteudo-impacto-real {
     display: flex;
@@ -380,3 +382,147 @@ footer p {
     color: #2E2C2C;
 }
 
+@media (max-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 15em;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 32px;
+        margin-left: 20px;
+        max-width: 80%;
+    }
+
+    .descricao-principal {
+        display: flex;
+        gap: 32px;
+        margin-left: 40px;
+        max-width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 80px;
+    }
+
+    .titulo-principal1 {
+        font-size: 50px;
+    }
+
+    .subtitulo-principal {
+        font-size: 24px;
+    }
+
+    .imagem-principal {
+        width: 20em;
+        min-width: 300px;
+        height: auto;
+    }
+
+    .conteudo-sobre-nos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 50px 0px 50px 0px;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .texto-img-sobre-nos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .descricao-sobre-nos {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    .projeto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 4px 4px 4px 0px rgba(211, 156, 16, 0.75);
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+
+    .projeto img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        transition: 1s;
+    }
+
+
+    .paragrafo-projetos {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #2E2C2C;
+    }
+
+    .comentarios-impacto-real {
+        flex-wrap: wrap;
+    }
+
+    .comentario{
+        flex-wrap: wrap
+
+
+    }
+    .descricao-impacto-real{
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .descricao-junte-se {
+        align-content: center;
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .texto-junte-se{
+        flex-direction: column;
+    }
+
+    .formulario-junte-se {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+}
